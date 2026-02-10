@@ -15,7 +15,7 @@ When the API subscription deletion workflow is enabled, when the subscription de
         <WorkFlowExtensions>
         ...
             <!--SubscriptionDeletion executor="org.wso2.carbon.apimgt.impl.workflow.SubscriptionDeletionSimpleWorkflowExecutor"/-->
-            <ubscriptionDeletion executor="org.wso2.carbon.apimgt.impl.workflow.SubscriptionDeletionAprrovalWorkflowExecutor"/>
+            <SubscriptionDeletion executor="org.wso2.carbon.apimgt.impl.workflow.SubscriptionDeletionApprovalWorkflowExecutor"/>
         ...
         </WorkFlowExtensions>
     ```
