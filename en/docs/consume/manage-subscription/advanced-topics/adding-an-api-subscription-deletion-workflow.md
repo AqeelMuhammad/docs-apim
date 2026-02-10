@@ -11,11 +11,11 @@ When the API subscription deletion workflow is enabled, when the subscription de
     [![Workflow Extensions Browse]({{base_path}}/assets/img/learn/wf-extensions-browse.png)]({{base_path}}/assets/img/learn/wf-extensions-browse.png)
 
 2.  Open the `/_system/governance/apimgt/applicationdata/workflow-extensions.xml` resource and click **Edit as text**. Disable the `SubscriptionDeletionSimpleWorkflowExecutor` and enable `SubscriptionDeletionApprovalWorkflowExecutor`. 
-    ``` 
+    ```
         <WorkFlowExtensions>
         ...
             <!--SubscriptionDeletion executor="org.wso2.carbon.apimgt.impl.workflow.SubscriptionDeletionSimpleWorkflowExecutor"/-->
-            <ubscriptionDeletion executor="org.wso2.carbon.apimgt.impl.workflow.SubscriptionDeletionAprrovalWorkflowExecutor"/>
+            <SubscriptionDeletion executor="org.wso2.carbon.apimgt.impl.workflow.SubscriptionDeletionApprovalWorkflowExecutor"/>
         ...
         </WorkFlowExtensions>
     ```
