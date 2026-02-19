@@ -324,6 +324,50 @@ Access to Java Methods/Native Objects can be restricted by providing the followi
 </pre>
 Java methods/native objects having names equal to any of the values given under <code>limit_java_native_object_access_in_scripts.object_names</code>, will be selectively blocked when <code>limit_java_native_object_access_in_scripts.list_type</code> is <code>BLOCK_LIST</code> (all other classes will be allowed).  
 Likewise, when <code>limit_java_native_object_access_in_scripts.list_type</code> is <code>ALLOW_LIST</code>, classes with matching names will be selectively allowed.
+
+Please refer to the following WSO2-recommended classes when updating your `ALLOW_LIST`. If you need to add additional classes, ensure they are verified as safe before including them.
+- java.math.*
+- java.lang.Object
+- java.lang.Character
+- java.lang.Boolean
+- java.lang.Byte
+- java.lang.Short
+- java.lang.Integer
+- java.lang.Long
+- java.lang.Float
+- java.lang.Double
+- java.lang.String
+- java.lang.StringBuilder
+- java.lang.StringBuffer
+- java.lang.Enum
+- java.lang.Math.*
+- java.util.UUID
+- java.util.ArrayList
+- java.util.Arrays
+- java.util.HashMap
+- java.util.HashSet
+- java.util.Hashtable
+- java.util.LinkedList
+- java.util.LinkedHashMap
+- java.util.LinkedHashSet
+- java.util.TreeMap
+- java.util.Collections
+- java.util.Random
+- java.util.regex.*
+- java.text.*
+- java.time.*
+- java.io.ByteArrayInputStream
+- java.io.ByteArrayOutputStream
+- java.io.StringWriter
+- java.io.StringReader
+- java.io.CharArrayWriter
+- java.io.CharArrayReader
+- javax.script.SimpleScriptContext
+- org.apache.synapse.mediators.bsf.CommonScriptMessageContext
+- org.apache.synapse.mediators.bsf.GraalVMJavaScriptMessageContext
+- org.apache.synapse.mediators.bsf.NashornJavaScriptMessageContext
+- org.apache.synapse.mediators.bsf.OpenJDKNashornJavaScriptMessageContext
+
 <br></br>
 </td>
 </tr>
