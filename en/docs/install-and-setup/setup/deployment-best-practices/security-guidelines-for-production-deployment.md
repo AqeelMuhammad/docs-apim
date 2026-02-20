@@ -326,47 +326,50 @@ Java methods/native objects having names equal to any of the values given under 
 Likewise, when <code>limit_java_native_object_access_in_scripts.list_type</code> is <code>ALLOW_LIST</code>, classes with matching names will be selectively allowed.
 
 Please refer to the following WSO2-recommended classes when updating your `ALLOW_LIST`. If you need to add additional classes, ensure they are verified as safe before including them.
-- java.math.*
-- java.lang.Object
-- java.lang.Character
-- java.lang.Boolean
-- java.lang.Byte
-- java.lang.Short
-- java.lang.Integer
-- java.lang.Long
-- java.lang.Float
-- java.lang.Double
-- java.lang.String
-- java.lang.StringBuilder
-- java.lang.StringBuffer
-- java.lang.Enum
-- java.lang.Math.*
-- java.util.UUID
-- java.util.ArrayList
-- java.util.Arrays
-- java.util.HashMap
-- java.util.HashSet
-- java.util.Hashtable
-- java.util.LinkedList
-- java.util.LinkedHashMap
-- java.util.LinkedHashSet
-- java.util.TreeMap
-- java.util.Collections
-- java.util.Random
-- java.util.regex.*
-- java.text.*
-- java.time.*
-- java.io.ByteArrayInputStream
-- java.io.ByteArrayOutputStream
-- java.io.StringWriter
-- java.io.StringReader
-- java.io.CharArrayWriter
-- java.io.CharArrayReader
-- javax.script.SimpleScriptContext
-- org.apache.synapse.mediators.bsf.CommonScriptMessageContext
-- org.apache.synapse.mediators.bsf.GraalVMJavaScriptMessageContext
-- org.apache.synapse.mediators.bsf.NashornJavaScriptMessageContext
-- org.apache.synapse.mediators.bsf.OpenJDKNashornJavaScriptMessageContext
+
+<ul>
+   <li>java.math.*</li>
+   <li>java.lang.Object</li>
+   <li>java.lang.Character</li>
+   <li>java.lang.Boolean</li>
+   <li>java.lang.Byte</li>
+   <li>java.lang.Short</li>
+   <li>java.lang.Integer</li>
+   <li>java.lang.Long</li>
+   <li>java.lang.Float</li>
+   <li>java.lang.Double</li>
+   <li>java.lang.String</li>
+   <li>java.lang.StringBuilder</li>
+   <li>java.lang.StringBuffer</li>
+   <li>java.lang.Enum</li>
+   <li>java.lang.Math.*</li>
+   <li>java.util.UUID</li>
+   <li>java.util.ArrayList</li>
+   <li>java.util.Arrays</li>
+   <li>java.util.HashMap</li>
+   <li>java.util.HashSet</li>
+   <li>java.util.Hashtable</li>
+   <li>java.util.LinkedList</li>
+   <li>java.util.LinkedHashMap</li>
+   <li>java.util.LinkedHashSet</li>
+   <li>java.util.TreeMap</li>
+   <li>java.util.Collections</li>
+   <li>java.util.Random</li>
+   <li>java.util.regex.*</li>
+   <li>java.text.*</li>
+   <li>java.time.*</li>
+   <li>java.io.ByteArrayInputStream</li>
+   <li>java.io.ByteArrayOutputStream</li>
+   <li>java.io.StringWriter</li>
+   <li>java.io.StringReader</li>
+   <li>java.io.CharArrayWriter</li>
+   <li>java.io.CharArrayReader</li>
+   <li>javax.script.SimpleScriptContext</li>
+   <li>org.apache.synapse.mediators.bsf.CommonScriptMessageContext</li>
+   <li>org.apache.synapse.mediators.bsf.GraalVMJavaScriptMessageContext</li>
+   <li>org.apache.synapse.mediators.bsf.NashornJavaScriptMessageContext</li>
+   <li>org.apache.synapse.mediators.bsf.OpenJDKNashornJavaScriptMessageContext</li>
+</ul>
 
 <br></br>
 </td>
